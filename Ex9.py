@@ -1,5 +1,5 @@
 class Time:
-    def __init__(self, Hr_Value, Min_Value, Sec_Value):
+    def __init__(self, Hr_Value = 0, Min_Value = 0, Sec_Value = 0):
         Time.Hr = Hr_Value
         Time.Min = Min_Value
         Time.Sec = Sec_Value
@@ -19,7 +19,7 @@ class Time:
         if add_Min >= 60:
             add_Min -= 60
             add_Hr += 1
-        return Time(add_Hr,add_Min,add_Sec)
+        return str(add_Hr) + ':' + str(add_Min) + ':' + str(add_Sec)
     def __sub__(self,arg2):
         sub_Sec = self.Sec - arg2.Sec
         sub_Min = self.Min - arg2.Min
