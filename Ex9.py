@@ -1,8 +1,8 @@
 class Time:
     def __init__(self, Hr_Value = 0, Min_Value = 0, Sec_Value = 0):
-        Time.Hr = Hr_Value
-        Time.Min = Min_Value
-        Time.Sec = Sec_Value
+        self.Hr = Hr_Value
+        self.Min = Min_Value
+        self.Sec = Sec_Value
     def __str__ (self):
         return str(self.Hr) + ':' + str(self.Min) + ':' + str(self.Sec)
     def __repr__(self):
